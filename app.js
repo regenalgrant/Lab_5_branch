@@ -8,7 +8,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
+<<<<<<< HEAD
 
+=======
+    var mySum = a + b;
+    var myMsg = 'The sum of ' + a + ' and ' + b + ' is ' + mySum + '.';
+    return [mySum, myMsg];
+>>>>>>> questionOneSum
 }
 
 
@@ -30,9 +36,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
-}
+	function multiply(a,b){ //eslint-disable-line
+	  var product = a * b;
+	  var message = 'The product of ' + a + ' and ' + b + ' is ' + product + '.';
+	  var output = [product, message];
+	  return output;
+	}
 
 
 // Here is the test for multiply(); uncomment it to run it

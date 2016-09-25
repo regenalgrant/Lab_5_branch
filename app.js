@@ -85,11 +85,23 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-
 function sumArray(testArray) { //eslint-disable-line
+  var totalSum = 0;
+	  var message = '';
+	  for (var i = 0; i < testArray.length; i++){
+	    var totalSumArray = sum(totalSum, testArray[i]);
+	    totalSum = totalSumArray[0];
+	    if (i === testArray.length - 1){
+	      message += testArray[i];
+	    } else {
+	      message += testArray[i] + ',';
+	    }
+	  }
+	  message += ' was passed in as an array of numbers, and ' + totalSum + ' is their sum.';
+	  var output = [totalSum, message];
+	  return output;
+	}
 
-
-}
 
 
 // Here is the test for sumArray(); uncomment it to run it

@@ -74,7 +74,7 @@ Test this function by hand in the console to get it working, and when you think 
 	  var messageProduct = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productABC + '.';
 	  var output = [sumABC, productABC, messageSum, messageProduct];
 	  return output;
-	
+
 }
 
 
